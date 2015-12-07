@@ -1,0 +1,68 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  font-family: sans;
+  line-height: 1.4em;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon{
+  font-family: FontAwesome;
+}
+
+.image-container{
+  /*position: relative;*/
+}
+
+.image{
+  /*position: absolute;*/
+  width: 100px;
+  height: auto;
+}
+
+.image-container > span{
+  vertical-align: top;
+}
+/*
+.carousel-appear {
+  .slide{
+    background-color: yellow;
+  }
+}
+
+.carousel-appear.carousel-appear-active {
+  .slide{
+    background-color: white;
+  }
+  transition: background-color 1s ease-in;
+}
+*/
+
+.carousel-enter {
+  opacity: 0;
+}
+
+.carousel-enter.carousel-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+
+.carousel-leave {
+  opacity: 1;
+}
+
+.carousel-leave.carousel-leave-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
